@@ -187,6 +187,10 @@ function showResult(scores) {
   const topGroup = Object.keys(scores).reduce((a, b) => (scores[a] >= scores[b] ? a : b));
   const group = GROUPS[topGroup];
 
+  if (typeof gtag === 'function') {
+    gtag('event', 'test_complete', { group: topGroup });
+  }
+
   document.getElementById('result-emoji').textContent = group.emoji;
   document.getElementById('result-emoji').className = `group-emoji ${group.className}`;
   document.getElementById('result-name').textContent = group.name;
