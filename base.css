@@ -1,0 +1,223 @@
+/* MBTI 공부법 연구소 - 기본 스타일 (변수, 리셋, 헤더, 버튼, 히어로, 푸터) */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+:root {
+  --cream: #FAF6EE;
+  --cream-soft: #F3ECDD;
+  --card-bg: #FFFFFF;
+  --purple: #7C5CFC;
+  --purple-dark: #5E3FE0;
+  --purple-soft: #EFE9FE;
+  --purple-line: #DCD0FB;
+  --text: #2E2A38;
+  --text-light: #6B6478;
+  --shadow: 0 8px 24px rgba(94, 63, 224, 0.08);
+
+  --nt-color: #5B7FDE;
+  --nt-soft: #E8EDFB;
+  --nf-color: #4CAF8E;
+  --nf-soft: #E4F5EF;
+  --sj-color: #E0954D;
+  --sj-soft: #FCEEDC;
+  --sp-color: #E0577B;
+  --sp-soft: #FBE6ED;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img, svg { max-width: 100%; }
+
+.hidden { display: none !important; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- 헤더 / 내비게이션 ---------- */
+
+.site-header {
+  background: rgba(250, 246, 238, 0.92);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--purple-line);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--purple-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-light);
+  transition: background 0.15s, color 0.15s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: var(--purple-soft);
+  color: var(--purple-dark);
+}
+
+.nav-cta {
+  background: var(--purple) !important;
+  color: #fff !important;
+}
+
+.nav-cta:hover {
+  background: var(--purple-dark) !important;
+  color: #fff !important;
+}
+
+/* ---------- 공통 섹션 / 버튼 ---------- */
+
+main { padding-bottom: 64px; }
+
+.section {
+  padding: 56px 0;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: var(--text-light);
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: var(--purple);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.btn:hover { background: var(--purple-dark); transform: translateY(-2px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--purple-dark);
+  border: 2px solid var(--purple-line);
+}
+
+.btn-outline:hover { background: var(--purple-soft); }
+
+.btn-secondary {
+  background: var(--card-bg);
+  color: var(--purple-dark);
+  border: 2px solid var(--purple-line);
+}
+
+/* ---------- 히어로 ---------- */
+
+.hero {
+  padding: 72px 0 48px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.hero p {
+  color: var(--text-light);
+  font-size: 1.08rem;
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--purple-soft);
+  color: var(--purple-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+/* ---------- 기질 태그 색상 (공통) ---------- */
+
+.group-emoji {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.tag-nt { background: var(--nt-soft); color: var(--nt-color); }
+.tag-nf { background: var(--nf-soft); color: var(--nf-color); }
+.tag-sj { background: var(--sj-soft); color: var(--sj-color); }
+.tag-sp { background: var(--sp-soft); color: var(--sp-color); }
+
+/* ---------- 푸터 ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--purple-line);
+  padding: 28px 0;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* ---------- 반응형 ---------- */
+
+@media (max-width: 520px) {
+  .hero h1 { font-size: 1.9rem; }
+  .site-header .container { height: auto; padding: 12px 20px; gap: 8px; }
+  .main-nav { width: 100%; justify-content: center; }
+}

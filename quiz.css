@@ -1,0 +1,138 @@
+/* MBTI 공부법 연구소 - 자가진단 테스트/결과 페이지 전용 스타일 */
+
+.test-wrap { max-width: 680px; margin: 0 auto; }
+
+.progress-track {
+  height: 8px;
+  background: var(--purple-soft);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--purple);
+  width: 0%;
+  transition: width 0.25s;
+}
+
+.question-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--purple-line);
+  box-shadow: var(--shadow);
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.question-card .q-index {
+  font-weight: 700;
+  color: var(--purple-dark);
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+}
+
+.question-card h3 { margin: 0 0 20px; font-size: 1.15rem; }
+
+.option {
+  display: block;
+  padding: 14px 18px;
+  border: 2px solid var(--purple-line);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.option:hover { border-color: var(--purple); }
+
+.option input { margin-right: 10px; }
+
+.option.selected {
+  border-color: var(--purple);
+  background: var(--purple-soft);
+  font-weight: 700;
+}
+
+.test-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.question-card.unanswered { border-color: var(--sp-color); }
+
+/* ---------- 결과 ---------- */
+
+.result-card {
+  background: var(--card-bg);
+  border-radius: 24px;
+  border: 1px solid var(--purple-line);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  text-align: center;
+}
+
+.result-card .group-emoji {
+  width: 90px;
+  height: 90px;
+  font-size: 2.5rem;
+  margin: 0 auto 16px;
+  border-radius: 26px;
+}
+
+.result-card h2 { font-size: 1.8rem; margin: 4px 0 6px; }
+.result-card .types-line { color: var(--text-light); font-weight: 700; margin-bottom: 16px; }
+.result-card p.desc { color: var(--text-light); max-width: 480px; margin: 0 auto 24px; }
+
+.score-bars { text-align: left; margin: 24px 0; }
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.score-row .label {
+  width: 40px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.score-row .bar-track {
+  flex-grow: 1;
+  height: 12px;
+  background: var(--cream-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.score-row .bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+.score-row .score-num {
+  width: 28px;
+  text-align: right;
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* ---------- 반응형 ---------- */
+
+@media (max-width: 520px) {
+  .question-card { padding: 24px 18px; }
+  .result-card { padding: 28px 20px; }
+}
