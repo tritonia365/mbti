@@ -7,7 +7,7 @@ const GROUPS = {
     emoji: '🧩',
     className: 'tag-nt',
     barColor: 'var(--nt-color)',
-    desc: '원리와 논리를 파고들어야 직성이 풀리는 전략가 타입이에요. 왜 그런지 이해될 때 비로소 지식이 내 것이 됩니다.',
+    desc: '원리와 논리를 파고들어야 직성이 풀리는 전략가 타입입니다. 왜 그런지 이해될 때 비로소 지식이 내 것이 됩니다.',
     link: 'nt.html',
   },
   NF: {
@@ -16,7 +16,7 @@ const GROUPS = {
     emoji: '🌱',
     className: 'tag-nf',
     barColor: 'var(--nf-color)',
-    desc: '의미와 스토리가 있어야 몰입되는 이상주의자 타입이에요. 감정적으로 연결되는 순간 몰입도가 확 올라갑니다.',
+    desc: '의미와 스토리가 있어야 몰입되는 이상주의자 타입입니다. 감정적으로 연결되는 순간 몰입도가 확 올라갑니다.',
     link: 'nf.html',
   },
   SJ: {
@@ -25,7 +25,7 @@ const GROUPS = {
     emoji: '📋',
     className: 'tag-sj',
     barColor: 'var(--sj-color)',
-    desc: '계획과 반복이 무기인 성실한 학습자 타입이에요. 체계적인 루틴 안에서 가장 안정적으로 성과를 냅니다.',
+    desc: '계획과 반복이 무기인 성실한 학습자 타입입니다. 체계적인 루틴 안에서 가장 안정적으로 성과를 냅니다.',
     link: 'sj.html',
   },
   SP: {
@@ -34,7 +34,7 @@ const GROUPS = {
     emoji: '⚡',
     className: 'tag-sp',
     barColor: 'var(--sp-color)',
-    desc: '직접 부딪히며 배우는 실전형 학습자 타입이에요. 짧고 굵은 몰입과 실습 위주 학습에서 힘을 발휘합니다.',
+    desc: '직접 부딪히며 배우는 실전형 학습자 타입입니다. 짧고 굵은 몰입과 실습 위주 학습에서 힘을 발휘합니다.',
     link: 'sp.html',
   },
 };

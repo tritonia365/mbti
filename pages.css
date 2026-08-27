@@ -33,7 +33,8 @@
 /* ---------- 그룹 상세 페이지 ---------- */
 
 .group-hero {
-  padding: 56px 0 40px;
+  padding-top: 56px;
+  padding-bottom: 40px;
   text-align: center;
   border-bottom: 1px solid var(--purple-line);
 }

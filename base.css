@@ -72,6 +72,7 @@ img, svg { max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 10px 0;
 }
 
 .main-nav {
@@ -110,7 +111,8 @@ img, svg { max-width: 100%; }
 main { padding-bottom: 64px; }
 
 .section {
-  padding: 56px 0;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .section-title {
@@ -159,7 +161,8 @@ main { padding-bottom: 64px; }
 /* ---------- 히어로 ---------- */
 
 .hero {
-  padding: 72px 0 48px;
+  padding-top: 72px;
+  padding-bottom: 48px;
   text-align: center;
 }
 
