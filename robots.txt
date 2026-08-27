@@ -1,0 +1,33 @@
+# 일반 검색엔진 크롤러
+User-agent: *
+Allow: /
+
+# AI 크롤러 (생성형 검색/답변 엔진에도 노출 허용)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://tritonia365.github.io/mbti/sitemap.xml
